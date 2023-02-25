@@ -1,0 +1,38 @@
+package proyectriki;
+import java.util.Random;
+
+public class gameoflive {
+	static int tablero[][];
+	final static int filas=10;
+	final static int columnas=10;
+	
+	public static void main(String[] args) {
+		
+		int [][] tablero = new int [filas][columnas] ;
+		int [][] tablero_2 = new int [filas][columnas];
+		
+		Random ran = new Random();
+
+		for (int i = 0;i<100;i++) {
+			for(int j = 0;j<100;j++) {
+				tablero [i][j]=ran.nextInt(2);
+			}
+		}
+		
+		for (int i = 0;i<100;i++) {
+			for(int j = 0;j<100;j++) {
+				System.out.printf(" [%d] ",tablero[i][j]);	
+			}
+			System.out.println();
+		}
+		
+		for (int i = 0;i<100;i++) {
+			for(int j = 0;j<100;j++) {
+				
+			}
+		}
+		
+		
+	}
+
+}
